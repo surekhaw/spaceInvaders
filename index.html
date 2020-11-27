@@ -1,0 +1,141 @@
+<!-- Space Invader jQuery HTML -->
+
+<!-- YOU SHOULD NOT NEED TO CHANGE THE HTM
+MUCH TO GET THE jQuery FUNCTIONALITY YOU NEED -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Space Invaders</title>
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- JQuery -->
+    <script src="./js/jquery.js"></script>
+  </head>
+  <body>
+    <!-- Overall Bootstrap Grid -->
+    <div class="container-fluid">
+      <!-- Jumbotron with Title -->
+      <div class="jumbotron">
+        <h1 class="text-center main-title"><strong>JQuery Space Invaders!</strong></h1>
+        <h4 class="text-center">Rated <span class="rating">M</span> for Master Software Developers Only</h4>
+        <hr>
+        <div class="text-center">
+          <button class="btn btn-warning btn-xs theme-button"> Play Sound!</button>
+          <button class="btn btn-default btn-xs pause-button"> Pause Sound</button>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Left card -->
+        <div class="col-lg-6">
+          <!-- Title Change the title -->
+          <div class="card card-default">
+            <div class="card-heading">
+              <h3 class="card-title text-center">Change the Main Title!</h3>
+            </div>
+            <div class="card-body">
+              <div class="text-center">
+                <button class="btn btn-default btn-lg normal-title-button"><span class="fa fa-okay"></span> Normal</button>
+                <button class="btn btn-primary btn-lg change-title-button"><span class="fa fa-plus"></span> Change</button>
+              </div>
+            </div>
+          </div>
+          <!-- Controls make the Spaceship Grow & Shrink-->
+          <div class="card card-default">
+            <div class="card-heading">
+              <h3 class="card-title text-center">Change Alien Ship Size!</h3>
+            </div>
+            <div class="card-body">
+              <div class="text-center">
+                <button class="btn btn-default btn-lg normal-button"><span class="fa fa-okay"></span> Normal</button>
+                <button class="btn btn-primary btn-lg grow-button"><span class="fa fa-plus"></span> Grow</button>
+                <button class="btn btn-danger btn-lg shrink-button"><span class="fa fa-minus"></span> Shrink</button>
+              </div>
+            </div>
+          </div>
+          <!-- Controls Make Spaceship Visible) -->
+          <div class="card card-default">
+            <div class="card-heading">
+              <h3 class="card-title text-center">Make Spaceship Invisible!</h3>
+            </div>
+            <div class="card-body">
+              <div class="text-center">
+                <button class="btn btn-default btn-lg vis-button"> Visible</button>
+                <button class="btn btn-info btn-lg invis-button"> Invisible</button>
+              </div>
+            </div>
+          </div>
+          <!-- spaceship Stretch -->
+          <div class="card card-default">
+            <div class="card-heading">
+              <h3 class="card-title text-center">Stretch the Spaceship anyway you want!</h3>
+            </div>
+            <div class="card-body">
+              <div class="text-center">
+                <button class="btn btn-info btn-lg normal-width-button"> Normal </button>
+                <button class="btn btn-default btn-lg stretch-button"> Stretch</button>
+              </div>
+            </div>
+          </div>
+          <!-- spaceship Rotate Spaceship 0 to 45 degrees -->
+          <div class="card card-default">
+            <div class="card-heading">
+              <h3 class="card-title text-center">Rotate Spaceship 45 Degrees!</h3>
+            </div>
+            <div class="card-body">
+              <div class="text-center">
+                <button class="btn btn-info btn-lg rotate-counter-clockwise-button"> Counter Clockwise</button>
+                <button class="btn btn-primary btn-lg level-ship-button"> Level Ship</button>
+                <button class="btn btn-default btn-lg rotate-clockwise-button"> Clockwise</button>
+              </div>
+            </div>
+          </div>
+          <!-- Change the background of Your Spaceship-->
+          <div class="card card-default">
+            <div class="card-heading">
+              <h3 class="card-title text-center">Change the Background</h3>
+            </div>
+            <div class="card-body">
+              <div class="text-center">
+                <button class="btn btn-default btn-lg normal-background-button"> Default</button>
+                <button class="btn btn-primary btn-lg blue-sky-background-button"> Blue Sky</button>
+                <button class="btn btn-warning btn-lg milky-way-galaxy-background-button">Milky Way Galaxy</button>
+              </div>
+            </div>
+          </div>
+          <!-- Spaceship Controls -->
+          <div class="card card-default">
+            <div class="card-heading">
+                <h3 class="card-title text-center">Space Ship Controls</h3>
+            </div>
+            <div class="card-body">
+              <div class="text-center">
+                <button style="position:relative;top:5px;width:4.2em;margin-left:-11px;margin-bottom:0.5em;" class="btn btn-default btn-lg up-button">Up</button>       
+              </div>
+              <div class="text-center">
+                <button style="position: relative;" class="btn btn-default btn-lg left-button">Left</button>
+                <button style="position: relative;" class="btn btn-default btn-lg center-button">Center (c)</button>
+                <button style="position: relative;"  class="btn btn-default btn-lg right-button">Right</button> 
+                </div>
+                <div class="text-center">
+                    <button style="position: relative;top:5px;left:-6px;"class="btn btn-default btn-lg down-button">Down</button>
+                </div>
+              <br>
+              <div class="text-center">
+                <button class="btn btn-default btn-lg back-button"> Go Back to Home Planet!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right card (Spaceship)-->
+        <div class="col-lg-6 main-column">
+          <!-- Spaceship Image -->
+          <img class="img captain-planet" src="./images/spaceship-png.png" style="position:absolute; top:100px; left: 40px; z-index: -20; height: 250px">
+        </div>
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
